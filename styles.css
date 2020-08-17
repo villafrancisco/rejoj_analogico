@@ -1,0 +1,137 @@
+:root {
+	--grades: 0;
+}
+
+body {
+	font-size: 22px;
+	font-weight: bold;
+}
+.reloj {
+	background-color: grey;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	position: relative;
+	border: 5px solid black;
+}
+
+.point_center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.point_center span {
+	width: 12px;
+	height: 12px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+.line {
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	border: 1px solid rgb(0, 0, 0);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	transform-origin: bottom;
+	z-index: 10;
+	transform: translateX(-50%) rotate(calc(var(--grades) * 1deg));
+}
+.hour {
+	width: 10px;
+	height: 35%;
+	background-color: black;
+}
+.minute {
+	width: 7px;
+	height: 40%;
+	background-color: black;
+}
+.second {
+	width: 3px;
+	height: 45%;
+	background-color: red;
+}
+
+.number {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.number span {
+	display: block;
+}
+.one {
+	transform: rotate(30deg);
+}
+.one span {
+	transform: rotate(-30deg);
+}
+.two {
+	transform: rotate(60deg);
+}
+.two span {
+	transform: rotate(-60deg);
+}
+.three {
+	transform: rotate(90deg);
+}
+.three span {
+	transform: rotate(-90deg);
+}
+.four {
+	transform: rotate(120deg);
+}
+.four span {
+	transform: rotate(-120deg);
+}
+.five {
+	transform: rotate(150deg);
+}
+.five span {
+	transform: rotate(-150deg);
+}
+.six {
+	transform: rotate(180deg);
+}
+.six span {
+	transform: rotate(-180deg);
+}
+.seven {
+	transform: rotate(210deg);
+}
+.seven span {
+	transform: rotate(-210deg);
+}
+.eight {
+	transform: rotate(240deg);
+}
+.eight span {
+	transform: rotate(-240deg);
+}
+.nine {
+	transform: rotate(270deg);
+}
+.nine span {
+	transform: rotate(-270deg);
+}
+.ten {
+	transform: rotate(300deg);
+}
+.ten span {
+	transform: rotate(-300deg);
+}
+.eleven {
+	transform: rotate(330deg);
+}
+.eleven span {
+	transform: rotate(-330deg);
+}
+.twuelve {
+	transform: rotate(360deg);
+}
+.twuelve span {
+	transform: rotate(-360deg);
+}
