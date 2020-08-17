@@ -21,7 +21,7 @@ setInterval(() => {
 			moverlinea(linehour, gradehour);
 		}
 	}
-}, 1);
+}, 1000);
 
 const moverlinea = (linea, grades) => {
 	let rotate = `rotate(${grades}deg)`;
